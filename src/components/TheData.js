@@ -39,16 +39,24 @@ function TheData() {
         </div>
       </form>
       {condition.map((item, index) => {
+        const iconurl =
+          "http://openweathermap.org/img/wn/" +
+          `${item.weather[0].icon}` +
+          ".png";
         return (
           <div id="data" key={index}>
-            <p>
-              <span>Location</span> : {item.name} {item.sys.country}
+            <p id="image">
+              <img src={iconurl} />
             </p>
             <p>
-              <span>Temperature</span> : {item.main.temp} <span>K</span>
+              <span>Location</span> : {item.name} {item.sys.country}{" "}
             </p>
             <p>
-              <span>Feels Like</span> : {item.main.feels_like} <span>K</span>
+              <span>Temperature</span> : {Math.floor(item.main.temp - 273.15)}{" "}
+              <sup>o</sup>
+            </p>
+            <p>
+              <span>Feels Like</span> : {item.main.feels_like}
             </p>
           </div>
         );

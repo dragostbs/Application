@@ -9,7 +9,7 @@ body {
   border-radius: 4px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
   padding: 1rem;
-  height: 12rem;
+  height: 17rem;
   display: inline-block;
 }
 
@@ -27,7 +27,7 @@ body {
 }
 
 #submit:hover {
-  background-color: rgb(2, 128, 206);
+  background-color: rgb(20, 69, 100);
 }
 
 form {
@@ -40,5 +40,11 @@ input {
   border-radius: 8px;
   border: 1px solid rgb(0, 0, 0);
   height: 35px;
-  text-align: center;
+}
+
+#image {
+  border: 1px solid rgb(35, 51, 61);
+  background-color: rgb(117, 117, 117);
+  border-radius: 10px;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
 }
