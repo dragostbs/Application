@@ -2,8 +2,8 @@
 
 # Weather Web Application ⛅
 
-Travel Application by displying cards destinations
-
+Weahter Application by inserting the latitude and the longitude
+ 
 ## Built With
 
 [![React][React.com]][React-url]
